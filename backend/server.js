@@ -11,9 +11,9 @@ dotenv.config();
 connectDB(); // i made a function there then called that function here
 // require("./config/db.js") // i did it without creating a function , so we have to require the file path
 app.use(express.json())
-app.get("/", (req, res) => {
-  res.send("api is running");
-});
+// app.get("/", (req, res) => {
+//   res.send("api is running");
+// });
 
 // instead of doing app.use(router) 
 // its like app.use("prefix path", router) addition of prefix path and here i used userRoutes name instead of router, because i will be having messageRoutes, chatRoutes
